@@ -1,0 +1,27 @@
+name: CI
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # The oldest Neovim the README promises, and the current one.
+        nvim: [v0.10.4, stable]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: palette.lua is what scripts/palette.mjs writes
+        run: node scripts/palette.mjs --check
+      - name: Neovim ${{ matrix.nvim }}
+        run: |
+          curl -fsSL -o nvim.tar.gz https://github.com/neovim/neovim/releases/download/${{ matrix.nvim }}/nvim-linux-x86_64.tar.gz
+          tar xzf nvim.tar.gz
+          echo "$PWD/nvim-linux-x86_64/bin" >> "$GITHUB_PATH"
+      - name: every group reads clearly; both variants load and switch
+        run: nvim --headless -u NONE -i NONE --cmd "set rtp^=." -l tests/check.lua
