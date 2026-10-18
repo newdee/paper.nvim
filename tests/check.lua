@@ -180,6 +180,8 @@ local function as(windows)
   end
 end
 as(true)
+-- What a run off Windows kept above is not this step's.
+vim.fn.delete(paper.state_file)
 answer = "light"
 vim.api.nvim_exec_autocmds("FocusGained", {})
 check(vim.g.colors_name == "paper" and loads == 1, "auto: the system turned light: paper, once")
@@ -216,5 +218,5 @@ for _, f in ipairs(failures) do
   print("FAIL " .. f)
 end
 if #failures > 0 then
-  vim.cmd.cquit(1)
+  vim.cmd("cquit 1")
 end
