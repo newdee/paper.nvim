@@ -7,7 +7,7 @@ Paper and Paper Dark for Neovim: ink on paper, as the code blocks on
 ![Paper Dark (left) and Paper (right)](assets/paper.png)
 
 - Vitesse's colours (keywords green, storage and operators red, strings
-  terracotta) on the paper of the page: `#171716` at night, `#fdfdfb` by day.
+  terracotta) on paper: `#171716` at night, sepia `#f0e7d2` by day.
 - One accent, cinnabar: the current line's number, the current match, the
   mode on the status line, what a completion or a picker matched.
 - Every text colour reads at 4.5:1 or more (WCAG AA) on the editor, the
@@ -112,9 +112,9 @@ by Anthony Fu (MIT). The terminal's 16 colours are keepane's `paper` and
 
 ## 中文
 
-paper.nvim 是 Neovim 的 Paper（白纸黑墨）和 Paper Dark（深色纸面）配色，和
+paper.nvim 是 Neovim 的 Paper（米黄纸面黑墨）和 Paper Dark（深色纸面）配色，和
 dfine.tech 的代码块、keepane 的默认终端主题是同一套颜色：Vitesse 的语法色，
-纸面底色（夜 `#171716`、昼 `#fdfdfb`），唯一的强调色是朱砂。所有文字颜色在
+纸面底色（夜 `#171716`、昼 sepia `#f0e7d2`），唯一的强调色是朱砂。所有文字颜色在
 编辑区、光标行、浮窗、选区上都不低于 4.5:1。
 
 LazyVim 用法见上面的 `lua/plugins/colorscheme.lua`；`require("paper").auto()`

@@ -74,13 +74,13 @@ const themes = {
       add: "#4d9375", change: "#6394bf", delete: "#cb7676", yellow: "#e6cc77", magenta: "#d9739f",
     },
     // keepane paper-dark's pane-colours, for :terminal.
-    terminal: "#393a34 #cb7676 #4d9375 #e6cc77 #6394bf #d9739f #5eaab5 #dbd7ca #818181 #cb7676 #4d9375 #e6cc77 #6394bf #d9739f #5eaab5 #ffffff",
+    terminal: "#393a34 #dc696c #2b9870 #efca4b #4f95cf #ec60a1 #38aebe #dbd7ca #818181 #dc696c #2b9870 #efca4b #4f95cf #ec60a1 #38aebe #ffffff",
   },
   light: {
     dark: false,
-    // The white board of a code block by day, its rail, keepane paper's lines.
-    ui: { bg: "#fdfdfb", bg_dim: "#eceae4", bg_hl: "#f4f2ee", bg_sel: "#e4e2dc", bg_float: "#f6f5f1", line: "#e4e2dc", border: "#92908a" },
-    ink: { fg: "#393a34", soft: "#5d5b55", muted: "#6b6860", faint: "#92908a", cinnabar: "#b83e3c" },
+    // Sepia paper, keepane paper's: an old book's page, its darker edge, its lines.
+    ui: { bg: "#f0e7d2", bg_dim: "#e3d8bf", bg_hl: "#e9dfc7", bg_sel: "#ddd2b6", bg_float: "#ebe2cc", line: "#ddd2b6", border: "#8a8172" },
+    ink: { fg: "#33302a", soft: "#5a5346", muted: "#635b4e", faint: "#8a8172", cinnabar: "#a53736" },
     syntax: {
       comment: "#a0ada0", punct: "#999999", constant: "#a65e2b", func: "#59873a", keyword: "#1e754f",
       builtin: "#ab5959", string: "#b56959", property: "#998418", variable: "#b07d48", type: "#2e8f82",
@@ -90,7 +90,7 @@ const themes = {
       add: "#1e754f", change: "#296aa3", delete: "#ab5959", yellow: "#776723", magenta: "#a13865",
     },
     // keepane paper's pane-colours.
-    terminal: "#eceae4 #9e5252 #1e754f #776723 #296aa3 #a13865 #20727e #5d5b55 #6a6863 #9e5252 #1e754f #776723 #296aa3 #a13865 #20727e #393a34",
+    terminal: "#e3d8bf #a6363d #046641 #815501 #035fa0 #b50165 #036470 #5a5346 #5e584d #a6363d #046641 #815501 #035fa0 #b50165 #036470 #33302a",
   },
 };
 
